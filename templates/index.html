@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h2>Videos</h2><a href="/upload">Add another</a>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Hidden</th>
+            </tr>
+            {% for v in videos %}
+            <tr>
+                <td>{{v.name}}</td>
+                <td>{{v.hidden}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

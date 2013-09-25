@@ -5,8 +5,8 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'privatetube.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
+    url(r'^$', 'tube.views.index'),
+    url(r'^upload/', 'tube.views.upload'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^(.*)$', 'tube.views.video'),
 )

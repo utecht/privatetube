@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tube',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -75,6 +76,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+TEMPLATE_DIRS = (
+        'templates',
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/

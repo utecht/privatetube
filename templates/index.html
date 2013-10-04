@@ -8,8 +8,8 @@
             </tr>
             {% for v in videos %}
             <tr>
-                <td>{{v.name}}</td>
-                <td>{{v.hidden}}</td>
+                <td><a href="/{{v.name}}">{{v.name}}</a></td>
+                <td><a href="/{{v.name}}">{{v.hidden}}</a></td>
             </tr>
             {% endfor %}
         </table>

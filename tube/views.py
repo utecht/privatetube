@@ -16,6 +16,7 @@ def video(request, name):
             video = Video.objects.get(hidden=name)
         except:
             return HttpResponse("<html><body>No video found :(</body></html>")
+    print("found video: {}".format(video.vid.url))
     return render(request, 'video.html', {'video':video})
 
 def upload(request):

@@ -1,4 +1,5 @@
 git+https://github.com/django/django
+gunicorn
 #requests
 #pillow
 #battlenet==0.2.6

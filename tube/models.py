@@ -8,6 +8,9 @@ class Video(models.Model):
     hidden = models.CharField(max_length=5, unique=True)
     vid = models.FileField(upload_to='videos')
 
+    def __str__(self):
+        return self.name
+
 admin.site.register(Video)
 
 class VideoForm(ModelForm):

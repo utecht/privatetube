@@ -84,3 +84,4 @@ TEMPLATE_DIRS = (
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/notabigtruck/files/static/'
